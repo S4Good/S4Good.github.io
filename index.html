@@ -1,10 +1,14 @@
 <!doctype html>
-<html lang="de"><head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio von Shahrukh Khan: Data Engineering, sichere Datenplattformen und praxisnahe Automatisierung.">
-    <meta name="theme-color" content="#08111f">
-    <title>Shahrukh Khan — Data &amp; AI Portfolio</title>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio von Shahrukh Khan: Data Engineering, sichere Datenplattformen und praxisnahe Automatisierung."
+    />
+    <meta name="theme-color" content="#08111f" />
+    <title>Shahrukh Khan — Data & AI Portfolio</title>
     <style>
       :root {
         --ink: #eaf2ff;
@@ -144,10 +148,16 @@
       @keyframes drift { 50% { transform: translate(73px, 84px); } }
       @media (max-width: 760px) {
         .wrap { width: min(100% - 32px, 1160px); }
+        .nav-inner { height: 66px; gap: 10px; }
+        .brand { flex: 0 0 auto; white-space: nowrap; font-size: .9rem; }
+        .brand-mark { width: 22px; height: 22px; font-size: 10px; }
         .nav-links { display: none; }
-        .nav-cta { padding: 8px 12px; }
+        .nav-social { gap: 6px; }
+        .nav-cta { padding: 8px 10px; font-size: .8rem; white-space: nowrap; }
         .hero { min-height: 650px; }
         .hero-inner { padding: 88px 0 70px; }
+        h1 { font-size: clamp(2.65rem, 11.5vw, 3.35rem); }
+        h2 { font-size: 2rem; }
         .orbital { width: 350px; height: 350px; right: -202px; top: 190px; }
         .section-heading, .skills-layout { grid-template-columns: 1fr; gap: 20px; }
         section { padding: 82px 0; }
@@ -158,6 +168,11 @@
         .facts-grid { grid-template-columns: 1fr 1fr; gap: 22px 16px; }
         .timeline-item { grid-template-columns: 100px 22px 1fr; gap: 13px; }
         .timeline-date { font-size: .68rem; }
+        .profile-card h3 { font-size: 1.72rem; }
+        .availability { width: min(100% - 32px, 1160px); padding: 32px 34px; border-radius: 18px; }
+        .availability h2 { font-size: 2.15rem; }
+        .availability p { font-size: 1rem; }
+        .availability .button { font-size: .86rem; }
         .footer-inner { flex-direction: column; }
       }
       @media (prefers-reduced-motion: reduce) {
@@ -168,7 +183,7 @@
   </head>
   <body>
     <div class="grain"></div>
-    <nav id="nav" class="scrolled">
+    <nav id="nav">
       <div class="wrap nav-inner">
         <a class="brand" href="#top" aria-label="Startseite">
           <span class="brand-mark">SK</span><span>Shahrukh Khan</span>
@@ -199,7 +214,7 @@
             <a class="button" href="https://www.linkedin.com/in/shahrukhkhan177" target="_blank" rel="noreferrer">LinkedIn ansehen <span class="arrow">↗</span></a>
           </div>
           <div class="hero-stats" aria-label="Profilübersicht">
-            <div class="stat"><strong>Data &amp; AI</strong><span>Engineering-Fokus</span></div>
+            <div class="stat"><strong>Data & AI</strong><span>Engineering-Fokus</span></div>
             <div class="stat"><strong>Secure by design</strong><span>Sicherheit als Prinzip</span></div>
             <div class="stat"><strong>Hands-on</strong><span>Von Idee bis Deployment</span></div>
           </div>
@@ -253,10 +268,10 @@
         </div>
       </section>
 
-      <section id="profile" class="wrap reveal visible">
+      <section id="profile" class="wrap reveal">
         <div class="section-heading">
           <div><div class="section-kicker">03 / Profil</div><h2>Data Engineering mit Sicherheitsbewusstsein.</h2></div>
-          <p class="section-intro">Ich entwickle mich gezielt in Richtung Junior Data Engineer und Data &amp; AI Platform Engineer – mit einem Fundament aus Prozessverständnis, Datenanalyse und Betriebspraxis.</p>
+          <p class="section-intro">Ich entwickle mich gezielt in Richtung Junior Data Engineer und Data & AI Platform Engineer – mit einem Fundament aus Prozessverständnis, Datenanalyse und Betriebspraxis.</p>
         </div>
         <div class="skills-layout">
           <article class="profile-card">
@@ -266,20 +281,20 @@
             <ul class="micro-list">
               <li>Frühere Verantwortung im datengetriebenen Operations-Umfeld</li>
               <li>Praxisprojekte statt reiner Tutorial-Sammlungen</li>
-              <li>Deutsch &amp; Englisch in der technischen Zusammenarbeit</li>
+              <li>Deutsch & Englisch in der technischen Zusammenarbeit</li>
             </ul>
           </article>
           <article class="skill-board" aria-label="Technologieprofil">
             <div class="skill-row"><div class="skill-title">Data Foundation</div><div class="skill-items"><span class="skill-item">Python</span><span class="skill-item">SQL</span><span class="skill-item">PostgreSQL</span><span class="skill-item">Pandas</span><span class="skill-item">Power BI</span><span class="skill-item">Datenmodellierung</span></div></div>
-            <div class="skill-row"><div class="skill-title">Platform &amp; Automation</div><div class="skill-items"><span class="skill-item">Docker</span><span class="skill-item">Linux</span><span class="skill-item">Git / GitHub</span><span class="skill-item">FastAPI</span><span class="skill-item">REST APIs</span><span class="skill-item">Systemd</span></div></div>
-            <div class="skill-row"><div class="skill-title">Lakehouse &amp; AI</div><div class="skill-items"><span class="skill-item">Microsoft Fabric</span><span class="skill-item">OneLake</span><span class="skill-item">PySpark</span><span class="skill-item">Delta</span><span class="skill-item">RAG</span><span class="skill-item">Qdrant</span></div></div>
+            <div class="skill-row"><div class="skill-title">Platform & Automation</div><div class="skill-items"><span class="skill-item">Docker</span><span class="skill-item">Linux</span><span class="skill-item">Git / GitHub</span><span class="skill-item">FastAPI</span><span class="skill-item">REST APIs</span><span class="skill-item">Systemd</span></div></div>
+            <div class="skill-row"><div class="skill-title">Lakehouse & AI</div><div class="skill-items"><span class="skill-item">Microsoft Fabric</span><span class="skill-item">OneLake</span><span class="skill-item">PySpark</span><span class="skill-item">Delta</span><span class="skill-item">RAG</span><span class="skill-item">Qdrant</span></div></div>
             <div class="skill-row"><div class="skill-title">Security Mindset</div><div class="skill-items"><span class="skill-item">ISO 27002</span><span class="skill-item">CIA-Prinzip</span><span class="skill-item">Nmap</span><span class="skill-item">SSH</span><span class="skill-item">Netzwerksegmentierung</span></div></div>
           </article>
         </div>
         <div class="facts" aria-label="Ausbildung und Praktikum: Eckdaten">
-          <div class="facts-header"><h3>Eckdaten</h3><span>Ausbildung &amp; Praxis</span></div>
+          <div class="facts-header"><h3>Eckdaten</h3><span>Ausbildung & Praxis</span></div>
           <div class="facts-grid">
-            <div class="fact"><span class="fact-label">Ausbildungsweg</span><span class="fact-value">IHK-Umschulung<br>07.07.2025 – 06.07.2027</span></div>
+            <div class="fact"><span class="fact-label">Ausbildungsweg</span><span class="fact-value">IHK-Umschulung<br />07.07.2025 – 06.07.2027</span></div>
             <div class="fact"><span class="fact-label">Spezialisierung</span><span class="fact-value">Daten- &amp; Prozessanalyse</span></div>
             <div class="fact"><span class="fact-label">Pflichtpraktikum</span><span class="fact-value">17.08.2026 – 05.07.2027</span></div>
             <div class="fact"><span class="fact-label">Schwerpunkt</span><span class="fact-value">Praxisphasen, IHK-Projektarbeit &amp; Abschlussprüfung</span></div>
@@ -287,15 +302,15 @@
         </div>
       </section>
 
-      <section id="path" class="wrap reveal visible">
+      <section id="path" class="wrap reveal">
         <div class="section-heading">
           <div><div class="section-kicker">04 / Weg</div><h2>Ein Übergang mit Richtung.</h2></div>
           <p class="section-intro">Die Kombination aus Operations-Erfahrung, Ausbildung und selbst aufgebauten Systemen prägt meinen Blick: Technik soll reale Prozesse besser machen.</p>
         </div>
         <div class="timeline">
-          <article class="timeline-item"><div class="timeline-date">2025 – 2027</div><div class="timeline-marker"></div><div class="timeline-content"><h3>IHK-Umschulung &amp; Praxis in Dresden</h3><p>Fachinformatiker für Daten- und Prozessanalyse mit Fokus auf sichere Datenflüsse, Automatisierung und praktische Engineering-Projekte.</p></div></article>
-          <article class="timeline-item"><div class="timeline-date">2026 →</div><div class="timeline-marker"></div><div class="timeline-content"><h3>Data &amp; AI Platform Engineering</h3><p>Vertiefung von Lakehouse-Architekturen, Datenqualität, Orchestrierung, Governance und lokaler AI/RAG-Integration.</p></div></article>
-          <article class="timeline-item"><div class="timeline-date">Fundament</div><div class="timeline-marker"></div><div class="timeline-content"><h3>Operations &amp; Datenanalyse</h3><p>Erfahrung mit Kennzahlen, Prozessen und operativer Verantwortung – heute die Brücke zwischen Business-Fragen und technischen Lösungen.</p></div></article>
+          <article class="timeline-item"><div class="timeline-date">2025 – 2027</div><div class="timeline-marker"></div><div class="timeline-content"><h3>IHK-Umschulung & Praxis in Dresden</h3><p>Fachinformatiker für Daten- und Prozessanalyse mit Fokus auf sichere Datenflüsse, Automatisierung und praktische Engineering-Projekte.</p></div></article>
+          <article class="timeline-item"><div class="timeline-date">2026 →</div><div class="timeline-marker"></div><div class="timeline-content"><h3>Data & AI Platform Engineering</h3><p>Vertiefung von Lakehouse-Architekturen, Datenqualität, Orchestrierung, Governance und lokaler AI/RAG-Integration.</p></div></article>
+          <article class="timeline-item"><div class="timeline-date">Fundament</div><div class="timeline-marker"></div><div class="timeline-content"><h3>Operations & Datenanalyse</h3><p>Erfahrung mit Kennzahlen, Prozessen und operativer Verantwortung – heute die Brücke zwischen Business-Fragen und technischen Lösungen.</p></div></article>
         </div>
       </section>
 
@@ -309,7 +324,7 @@
     </main>
 
     <footer class="wrap">
-      <div class="footer-inner"><span>© <span id="year">2026</span> Shahrukh Khan · Dresden, Deutschland</span><span><a href="https://github.com/S4Good" target="_blank" rel="noreferrer">GitHub ↗</a> · <a href="https://www.linkedin.com/in/shahrukhkhan177" target="_blank" rel="noreferrer">LinkedIn ↗</a></span></div>
+      <div class="footer-inner"><span>© <span id="year"></span> Shahrukh Khan · Dresden, Deutschland</span><span><a href="https://github.com/S4Good" target="_blank" rel="noreferrer">GitHub ↗</a> · <a href="https://www.linkedin.com/in/shahrukhkhan177" target="_blank" rel="noreferrer">LinkedIn ↗</a></span></div>
     </footer>
 
     <script>
@@ -322,7 +337,5 @@
       }), { threshold: .12 });
       document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
     </script>
-  
-
-
-</body></html>
+  </body>
+</html>
